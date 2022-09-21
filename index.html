@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let firstValue = parseInt(prompt("Inserez le premier nombre:"));
+        let operator = prompt("Inserez l'opérateur:");
+        let secondValue = parseInt(prompt("Inserez le second nombre:"));
+
+        function calculate(firstNumber, operator, secondNumber) {
+
+            switch (symbol) {
+                case "+":
+                    return firstNumber + secondNumber;
+                    break;
+                case "-":
+                    return firstNumber - secondNumber;
+                    break;
+                case "*":
+                    return firstNumber * secondNumber;
+                    break;
+                case "/":
+                    return firstNumber / secondNumber;
+                    break;
+                default:
+                    console.log("Invalid operator")
+                    break;
+
+            }
+        }
+
+        console.log("Résultat : ", calculate(firstValue, operator, secondValue));
+    </script>
+</body>
+
+</html>
